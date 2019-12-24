@@ -54,7 +54,7 @@ public class WechatPayCallbackActivity extends Activity implements IWXAPIEventHa
                 if(resp.errCode == BaseResp.ErrCode.ERR_OK){ //        0 成功	展示成功页面
                     listener.onPaySuccess(1, "支付成功");
                 }else{//  -1	错误       -2	用户取消
-                    listener.onPayFailure(2, "支付失败");
+                    listener.onPayFailure(1, "支付失败");
                 }
             }
         }
